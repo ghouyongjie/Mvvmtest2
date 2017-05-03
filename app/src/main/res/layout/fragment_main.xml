@@ -1,0 +1,30 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="viewModel"
+            type="com.example.administrator.mvvmtest.viewmodel.QuestionViewModel"
+            />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <Button
+            android:id="@+id/buttonadd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="add"/>
+        <android.support.v7.widget.RecyclerView
+            android:layout_below="@+id/buttonadd"
+            android:id="@+id/rv_lastest_question"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            bind:adapter="@{viewModel.questionListAdapter}"
+            ></android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+
+</layout>

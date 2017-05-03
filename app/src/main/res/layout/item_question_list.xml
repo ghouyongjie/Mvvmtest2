@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <data>
+
+        <!--<variable-->
+            <!--name="question"-->
+            <!--type="com.example.data.entity.Question"/>-->
+
+    </data>
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="15dp"
+        android:paddingBottom="11dp"
+        android:paddingLeft="14dp"
+        android:paddingRight="10dp">
+        <TextView
+            android:id="@+id/textFrom"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+
+            android:textSize="12sp"
+            android:textColor="#101010"/>
+        <TextView
+            android:id="@+id/textPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="#101010"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#101010"
+
+        android:textSize="14sp"
+        android:paddingLeft="14dp"
+        android:paddingRight="12dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingLeft="14dp"
+        android:paddingRight="10dp"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp">
+        <ImageView
+            android:id="@+id/imageHeader"
+            android:layout_width="54dp"
+            android:layout_height="54dp" />
+        <include
+            android:id="@+id/listen"
+            layout="@layout/item_listen"
+            android:layout_toRightOf="@+id/imageHeader"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textReplier"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="章小维   主任医师,副教授"
+        android:paddingBottom="10dp"
+        android:textSize="12sp"
+        android:paddingLeft="14dp"
+        android:paddingRight="10dp"
+        android:textColor="#8c8c8c"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="18dp"
+        android:paddingLeft="14dp"
+        android:paddingRight="10dp">
+        <TextView
+            android:id="@+id/textTime"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="两小时前的回答"
+            android:textSize="12sp"
+            android:textColor="#8c8c8c"/>
+        <TextView
+            android:id="@+id/textListen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="99人"
+            android:textSize="12sp"
+            android:textColor="#8c8c8c"
+            android:drawableLeft="@mipmap/icon_listen_count"
+            android:gravity="bottom"
+            android:drawablePadding="3dp"
+            android:layout_marginRight="10dp"
+            />
+        <TextView
+            android:id="@+id/textSupportCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="16人"
+            android:textSize="12sp"
+            android:textColor="#8c8c8c"
+            android:drawableLeft="@mipmap/icon_support_count"
+            android:gravity="bottom"
+            android:drawablePadding="3dp"
+            />
+    </LinearLayout>
+</LinearLayout>
+</layout>

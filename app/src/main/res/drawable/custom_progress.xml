@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- background -->  
+    <item  
+        android:id="@android:id/background"
+       >
+        <shape >
+            <solid android:color="#00ffffff"/>
+        </shape>
+    </item>  
+    <!-- progress -->  
+    <item android:id="@android:id/progress"> 
+        <clip 
+            android:drawable="@mipmap/icon_listen_green1"
+            android:clipOrientation="horizontal"
+            android:gravity="left"
+            />
+    </item>  
+    
+
+</layer-list>
